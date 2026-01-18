@@ -21,7 +21,7 @@
 - 🌱 I’m currently learning **Kubernetes, System Design, and Architectures**
 - 👯 I’m looking to collaborate on **Open Source**
 - 💬 Ask me about **Node.js, On-Premise Servers, Terraform, Kubernetes, AdTech, Scaling**
-- 📫 How to reach me: **imonirulislam@gmail.com**
+- 📫 How to reach me: **imonirul017@gmail.com**
 
 ---
 
