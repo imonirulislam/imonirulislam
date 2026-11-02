@@ -1,0 +1,52 @@
+name: Profile cards
+
+# Rebuilds the README's stats, languages and contribution snake once a day and
+# publishes them to the `output` branch, which the README loads its images from.
+# Add a PROFILE_TOKEN secret (a fine-grained token with read-only access) to count
+# private contributions too; without it the cards show public activity only.
+on:
+  schedule:
+    - cron: "0 3 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-cards
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Stats and language cards
+        env:
+          GITHUB_TOKEN: ${{ secrets.PROFILE_TOKEN || github.token }}
+          USERNAME: ${{ github.repository_owner }}
+        run: node scripts/cards.mjs dist
+
+      - name: Contribution snake
+        uses: Platane/snk@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            dist/snake.svg
+            dist/snake-dark.svg?palette=github-dark
+
+      - name: Publish to the output branch
+        uses: crazy-max/ghaction-github-pages@v4
+        with:
+          target_branch: output
+          build_dir: dist
+          jekyll: false
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
