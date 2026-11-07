@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="200" viewBox="0 0 420 200" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">
+  <rect x="0.5" y="0.5" width="419" height="199" rx="10" fill="#ffffff" stroke="#d0d7de"/>
+  <text x="24" y="38" font-size="16" font-weight="600" fill="#0969da">Most used languages</text>
+  <clipPath id="bar"><rect x="24" y="56" width="372" height="8" rx="4"/></clipPath>
+  <rect x="24" y="56" width="372" height="8" rx="4" fill="#eaeef2"/>
+  <g clip-path="url(#bar)">
+  <rect x="24.00" y="56" width="304.19" height="8" fill="#3178c6"/>
+  <rect x="328.19" y="56" width="22.54" height="8" fill="#fcb32c"/>
+  <rect x="350.74" y="56" width="18.31" height="8" fill="#00ADD8"/>
+  <rect x="369.04" y="56" width="10.71" height="8" fill="#ff5a03"/>
+  <rect x="379.75" y="56" width="5.70" height="8" fill="#663399"/>
+  <rect x="385.44" y="56" width="3.60" height="8" fill="#336790"/>
+  <rect x="389.04" y="56" width="3.04" height="8" fill="#f1e05a"/>
+  <rect x="392.08" y="56" width="1.37" height="8" fill="#384d54"/>
+  </g>
+  <circle cx="29" cy="88" r="5" fill="#3178c6"/>
+  <text x="40" y="92" font-size="13" fill="#1f2328">TypeScript <tspan fill="#59636e">81.8%</tspan></text>
+  <circle cx="215" cy="88" r="5" fill="#fcb32c"/>
+  <text x="226" y="92" font-size="13" fill="#1f2328">MDX <tspan fill="#59636e">6.1%</tspan></text>
+  <circle cx="29" cy="114" r="5" fill="#00ADD8"/>
+  <text x="40" y="118" font-size="13" fill="#1f2328">Go <tspan fill="#59636e">4.9%</tspan></text>
+  <circle cx="215" cy="114" r="5" fill="#ff5a03"/>
+  <text x="226" y="118" font-size="13" fill="#1f2328">Astro <tspan fill="#59636e">2.9%</tspan></text>
+  <circle cx="29" cy="140" r="5" fill="#663399"/>
+  <text x="40" y="144" font-size="13" fill="#1f2328">CSS <tspan fill="#59636e">1.5%</tspan></text>
+  <circle cx="215" cy="140" r="5" fill="#336790"/>
+  <text x="226" y="144" font-size="13" fill="#1f2328">PLpgSQL <tspan fill="#59636e">1.0%</tspan></text>
+  <circle cx="29" cy="166" r="5" fill="#f1e05a"/>
+  <text x="40" y="170" font-size="13" fill="#1f2328">JavaScript <tspan fill="#59636e">0.8%</tspan></text>
+  <circle cx="215" cy="166" r="5" fill="#384d54"/>
+  <text x="226" y="170" font-size="13" fill="#1f2328">Dockerfile <tspan fill="#59636e">0.4%</tspan></text>
+</svg>
